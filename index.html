@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@0.18.0/build/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <h1>QR Code Generator</h1> -->
+    <div id="qrcode"></div>
+    <!-- <form> -->
+      <!-- <label for="content">QR Code Content:</label> -->
+      <!-- <input type="text" id="content" name="content" value="www.facebook.com"> -->
+      <!-- <button type="button" onclick="updateQRCode()">Update QR Code</button> -->
+    <!-- </form> -->
+  </div>
+  <script>
+  //   var qrcode = new QRCode("qrcode", {
+  //     text: "Initial QR code content",
+  //     width: 256,
+  //     height: 256,
+  //     colorDark: "#000000",
+  //     colorLight: "#ffffff",
+  //     correctLevel: QRCode.CorrectLevel.H
+  //   });
+  // var content = document.getElementById("content").value;
+  //   qrcode.makeCode("www.facebook.com");
+
+  var qrcode = new QRCode("qrcode",
+  "https://11mnr11.github.io/attendencescan/");
+
+    // function updateQRCode() {
+    //   var content = document.getElementById("content").value;
+    //   qrcode.makeCode(content);
+    // }
+    //
+    // setInterval(function(){
+    //   updateQRCode();
+    // }, 10000);
+
+
+
+  </script>
+</body>
+
+</html>
